@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Young-serif";
+    src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--White);
+    font-family: "Outfit";
+    color: var(--Wenge-Brown);
+}
+
+h1, h2 {
+    font-family: "Young-serif";
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: var(--Dark-Charcoal);
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--Nutmeg);
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: var(--Dark-Raspberry);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+p, li {
+    line-height: 1.5;
+}
+
+ol {
+    list-style-position: outside;
+    margin-left: 1.5em;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+ul li strong {
+    display: contents;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+ul li::before{
+    content: "\2022";
+    font-size: 1.5rem;
+    margin-right: 22px;
+    color: var(--Dark-Raspberry);
+}
+
+ol li {
+    padding-left: 16px;
+}
+
+ol li::marker {
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
+
+img {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+section {
+    margin: 0 32px;
+    padding: 32px 0;
+}
+
+.prep {
+    padding: 24px;
+    margin: 32px 0;
+    background: var(--Rose-White);
+    border-radius: 12px;
+}
+
+.instructions {
+    border-top: 1px solid var(--Light-Grey);
+    border-bottom: 1px solid var(--Light-Grey);
+}
+
+table {
+    margin-top: 24px;
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr:not(:last-child) {
+    border-bottom: 1px solid var(--Light-Grey);
+}
+
+table th,
+table td {
+    padding: 12px 0;
+    text-align: start;
+}
+
+table th {
+    font-weight: 400;
+    padding-left: 32px;
+}
+
+table td {
+    color: var(--Nutmeg);
+    font-weight: 700;
+    padding-right: 32px;
+}
